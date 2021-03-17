@@ -114,6 +114,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -122,17 +124,23 @@
 <td align="left">breed_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">average_kpd</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">average_weight</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -149,6 +157,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -157,11 +167,15 @@
 <td align="left">diet_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">content</td>
 <td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -169,11 +183,15 @@
 <td align="left">season</td>
 <td align="left"><code>varchar(40)</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">breed</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>Breed.breed_id</code></td>
 </tr>
@@ -190,6 +208,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -198,11 +218,15 @@
 <td align="left">chicken_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">weight</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -210,11 +234,15 @@
 <td align="left">age</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">kpd</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -222,11 +250,15 @@
 <td align="left">place</td>
 <td align="left"><code>varchar(40)</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">breed</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>Breed.breed_id</code></td>
 </tr>
@@ -243,6 +275,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -251,11 +285,15 @@
 <td align="left">worker_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">passport</td>
 <td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -263,11 +301,15 @@
 <td align="left">passport_timing</td>
 <td align="left"><code>varchar(40)</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">fio</td>
 <td align="left"><code>varchar(80)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -275,11 +317,15 @@
 <td align="left">work_place</td>
 <td align="left"><code>varchar(40)</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">salary</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -287,17 +333,23 @@
 <td align="left">doc</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">fire</td>
 <td align="left"><code>boolean</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">hire</td>
 <td align="left"><code>date</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -314,6 +366,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -322,17 +376,23 @@
 <td align="left">department_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">capacity</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">address</td>
 <td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -349,6 +409,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -357,11 +419,15 @@
 <td align="left">cell_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">row</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -369,11 +435,15 @@
 <td align="left">cell</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">department</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>Department.department_id</code></td>
 </tr>
@@ -390,6 +460,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -398,17 +470,23 @@
 <td align="left">cleaning_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">cell</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>Cell.cell_id</code></td>
 </tr>
 <tr>
 <td align="left">worker</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>Worker.worker_id</code></td>
 </tr>
@@ -425,6 +503,8 @@
 <th align="left">name</th>
 <th align="left">type</th>
 <th align="left">primary key</th>
+<th align="left">unique</th>
+<th align="left">not null</th>
 <th align="left">references</th>
 </tr>
 </thead>
@@ -433,11 +513,15 @@
 <td align="left">maintenance_id</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>true</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">in_d</td>
 <td align="left"><code>date</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
@@ -445,17 +529,23 @@
 <td align="left">out_d</td>
 <td align="left"><code>date</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>null</code></td>
 </tr>
 <tr>
 <td align="left">cell</td>
 <td align="left"><code>int</code></td>
 <td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>Cell.cell_id</code></td>
 </tr>
 <tr>
 <td align="left">chicken</td>
 <td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>false</code></td>
 <td align="left"><code>false</code></td>
 <td align="left"><code>Chicken.chicken_id</code></td>
 </tr>
@@ -548,5 +638,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-17 19:39:15.151452+00:00
+Build Date UTC : 2021-03-17 20:00:22.533216+00:00
 -->
