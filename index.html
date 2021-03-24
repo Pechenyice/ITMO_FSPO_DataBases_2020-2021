@@ -147,10 +147,18 @@
 </tbody>
 </table>
 <h3 id="creation"><strong>Creation</strong></h3>
-<pre><code>create table breed(breed_id int primary key, average_kpd int, average_weight int);
+<pre><code>create table breed(
+    breed_id int primary key, 
+    average_kpd int, 
+    average_weight int
+);
 </code></pre>
 <h3 id="commands"><strong>Commands</strong></h3>
-<pre><code>insert into breed values (1,2,3);
+<pre><code>insert into breed values (
+    1,
+    2,
+    3
+);
 </code></pre>
 <h2 id="2diet"><strong>2.Diet</strong></h2>
 <table>
@@ -200,10 +208,21 @@
 </tbody>
 </table>
 <h3 id="creation_1"><strong>Creation</strong></h3>
-<pre><code>create table diet (diet_id int primary key, content varchar(40), season varchar(40), breed int, foreign key (breed) references breed (breed_id));
+<pre><code>create table diet (
+    diet_id int primary key, 
+    content varchar(40), 
+    season varchar(40), 
+    breed int, 
+    foreign key (breed) references breed (breed_id)
+);
 </code></pre>
 <h3 id="commands_1"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, &quot;2&quot;, &quot;3&quot;, 1)
+<pre><code>insert into diet values (
+    1, 
+    &quot;2&quot;, 
+    &quot;3&quot;, 
+    1
+);
 </code></pre>
 <h2 id="3chicken"><strong>3.Chicken</strong></h2>
 <table>
@@ -269,10 +288,25 @@
 </tbody>
 </table>
 <h3 id="creation_2"><strong>Creation</strong></h3>
-<pre><code>create table chicken (chicken_id int primary key, weight int, age int, kpd int, place varchar(40), breed int, foreign key (breed) references breed (breed_id));
+<pre><code>create table chicken (
+    chicken_id int primary key, 
+    weight int, 
+    age int, 
+    kpd int, 
+    place varchar(40), 
+    breed int, 
+    foreign key (breed) references breed (breed_id)
+);
 </code></pre>
 <h3 id="commands_2"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, 100, 10, 50, &quot;here&quot;, 1)
+<pre><code>insert into diet values (
+    1, 
+    100, 
+    10, 
+    50, 
+    &quot;here&quot;, 
+    1
+);
 </code></pre>
 <h2 id="4worker"><strong>4.Worker</strong></h2>
 <table>
@@ -362,10 +396,30 @@
 </tbody>
 </table>
 <h3 id="creation_3"><strong>Creation</strong></h3>
-<pre><code>insert into worker (worker_id int primary key, passport varchar(40), passport_timing varchar(40), fio varchar(80), work_place varchar(40), salary int, doc int, fire boolean, hire date);
+<pre><code>insert into worker (
+    worker_id int primary key,
+    passport varchar(40), 
+    passport_timing varchar(40), 
+    fio varchar(80), 
+    work_place varchar(40), 
+    salary int, 
+    doc int, 
+    fire boolean, 
+    hire date
+);
 </code></pre>
 <h3 id="commands_3"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, &quot;133333&quot;, &quot;12.02.2020&quot;, &quot;Antonov Anton Antonovich&quot;, &quot;here&quot;, 15000, 123, false, &quot;12.03.2019&quot;)
+<pre><code>insert into diet values (
+    1, 
+    &quot;133333&quot;, 
+    &quot;12.02.2020&quot;, 
+    &quot;Antonov Anton Antonovich&quot;, 
+    &quot;here&quot;, 
+    15000, 
+    123, 
+    false, 
+    &quot;12.03.2019&quot;
+);
 </code></pre>
 <h2 id="5department"><strong>5.Department</strong></h2>
 <table>
@@ -407,10 +461,18 @@
 </tbody>
 </table>
 <h3 id="creation_4"><strong>Creation</strong></h3>
-<pre><code>insert into department (department_id int primary key, capacity int, address varchar(40));
+<pre><code>insert into department (
+    department_id int primary key, 
+    capacity int, 
+    address varchar(40)
+);
 </code></pre>
 <h3 id="commands_4"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, 100, &quot;Pushkin's st.&quot;)
+<pre><code>insert into diet values (
+    1, 
+    100, 
+    &quot;Pushkin's st.&quot;
+);
 </code></pre>
 <h2 id="6cell"><strong>6.Cell</strong></h2>
 <table>
@@ -460,10 +522,21 @@
 </tbody>
 </table>
 <h3 id="creation_5"><strong>Creation</strong></h3>
-<pre><code>insert into cell (cell_id int primary key, row int, cell int, department int, foreign key (department) references department (department_id));
+<pre><code>insert into cell (
+    cell_id int primary key, 
+    row int, 
+    cell int, 
+    department int, 
+    foreign key (department) references department (department_id)
+);
 </code></pre>
 <h3 id="commands_5"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, 2, 3, 1)
+<pre><code>insert into diet values (
+    1, 
+    2, 
+    3, 
+    1
+);
 </code></pre>
 <h2 id="7cleaning"><strong>7.Cleaning</strong></h2>
 <table>
@@ -505,10 +578,21 @@
 </tbody>
 </table>
 <h3 id="creation_6"><strong>Creation</strong></h3>
-<pre><code>insert into cleaning (cleaning_id int primary key, cell int, worker int, foreign key (cell) references cell (cell_id), foreign key (worker) references worker (worker_id));
+<pre><code>insert into cleaning (
+    cleaning_id int primary key, 
+    cell int, 
+    worker int, 
+    foreign key (cell) references cell (cell_id), 
+    foreign key (worker) references worker (worker_id)
+);
 </code></pre>
 <h3 id="commands_6"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, 1, 1, 1)
+<pre><code>insert into diet values (
+    1, 
+    1, 
+    1, 
+    1
+);
 </code></pre>
 <h2 id="8maintenance"><strong>8.Maintenance</strong></h2>
 <table>
@@ -566,10 +650,24 @@
 </tbody>
 </table>
 <h3 id="creation_7"><strong>Creation</strong></h3>
-<pre><code>insert into maintenance (maintenance_id int primary key, in_d date, out_d date, cell int, chicken int, foreign key (cell) references cell (cell_id), foreign key (chicken) references chicken (chicken_id));
+<pre><code>insert into maintenance (
+    maintenance_id int primary key, 
+    in_d date, 
+    out_d date, 
+    cell int, 
+    chicken int, 
+    foreign key (cell) references cell (cell_id), 
+    foreign key (chicken) references chicken (chicken_id)
+);
 </code></pre>
 <h3 id="commands_7"><strong>Commands</strong></h3>
-<pre><code>insert into diet values (1, &quot;20.03.2018&quot;, &quot;23.04.2018&quot;, 1, 1)
+<pre><code>insert into diet values (
+    1, 
+    &quot;20.03.2018&quot;, 
+    &quot;23.04.2018&quot;, 
+    1, 
+    1
+);
 </code></pre></div>
             </div>
         </div>
@@ -654,5 +752,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-24 12:45:53.657728+00:00
+Build Date UTC : 2021-03-24 13:01:24.539045+00:00
 -->
