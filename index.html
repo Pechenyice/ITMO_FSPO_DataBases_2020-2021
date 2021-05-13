@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requests" class="md-skip">
+        <a href="#tables-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Requests
+              Tables documentation
             
           </span>
         </div>
@@ -179,12 +179,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Requests
+          Tables documentation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        Requests
+        Tables documentation
       </a>
       
         
@@ -200,6 +200,62 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#breed" class="md-nav__link">
+    Breed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diet" class="md-nav__link">
+    Diet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chicken" class="md-nav__link">
+    Chicken
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worker" class="md-nav__link">
+    Worker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#department" class="md-nav__link">
+    Department
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cell" class="md-nav__link">
+    Cell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleaning" class="md-nav__link">
+    Cleaning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
       
     </ul>
   
@@ -234,6 +290,62 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#breed" class="md-nav__link">
+    Breed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diet" class="md-nav__link">
+    Diet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chicken" class="md-nav__link">
+    Chicken
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worker" class="md-nav__link">
+    Worker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#department" class="md-nav__link">
+    Department
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cell" class="md-nav__link">
+    Cell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleaning" class="md-nav__link">
+    Cleaning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -247,7 +359,334 @@
               
                 
                 
-                <h1 id="requests">Requests</h1>
+                <h1 id="tables-documentation">Tables documentation</h1>
+<h2 id="breed">Breed</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">breed_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">average_kpd</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">average_weight</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="diet">Diet</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">diet_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">content</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">season</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">breed</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Breed.breed_id</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="chicken">Chicken</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">chicken_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">weight</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">age</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">kpd</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">place</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">breed</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Breed.breed_id</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="worker">Worker</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">worker_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">passport</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">passport_timing</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">fio</td>
+<td align="left"><code>varchar(80)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">work_place</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">salary</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">doc</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">fire</td>
+<td align="left"><code>boolean</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">hire</td>
+<td align="left"><code>date</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="department">Department</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">department_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">capacity</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">address</td>
+<td align="left"><code>varchar(40)</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cell">Cell</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">cell_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">row</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">cell</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">department</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Department.department_id</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cleaning">Cleaning</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">cleaning_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">cell</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Cell.cell_id</code></td>
+</tr>
+<tr>
+<td align="left">worker</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Worker.worker_id</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="maintenance">Maintenance</h2>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">type</th>
+<th align="left">primary key</th>
+<th align="left">references</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">maintenance_id</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>true</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">in_d</td>
+<td align="left"><code>date</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">out_d</td>
+<td align="left"><code>date</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
+</tr>
+<tr>
+<td align="left">cell</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Cell.cell_id</code></td>
+</tr>
+<tr>
+<td align="left">chicken</td>
+<td align="left"><code>int</code></td>
+<td align="left"><code>false</code></td>
+<td align="left"><code>Chicken.chicken_id</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="requests">Requests</h1>
 <h1 id="result-31">Result: 31</h1>
 <h2 id="request-1">Request 1</h2>
 <p>Вывести всю информацию из таблиц chicken и breed совместно.</p>
