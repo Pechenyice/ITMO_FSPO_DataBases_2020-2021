@@ -1957,6 +1957,41 @@
 </tbody>
 </table>
 <h3 id="score-1-31">score += 1 (31)</h3>
+<h1 id="mongodb">MongoDB</h1>
+<h2 id="_3"><strong>Модель</strong></h2>
+<p><img alt="1" src="schema.png" /></p>
+<h2 id="_4"><strong>Логи</strong></h2>
+<ol>
+<li>Создание</li>
+</ol>
+<p><img alt="1" src="logs/1.png" /></p>
+<ol>
+<li>Chicken</li>
+</ol>
+<p><img alt="1" src="logs/chicken.png" /></p>
+<ol>
+<li>Cleaning</li>
+</ol>
+<p><img alt="1" src="logs/cleaning.png" /></p>
+<ol>
+<li>Maintenance</li>
+</ol>
+<p><img alt="1" src="logs/maintenance.png" /></p>
+<h2 id="_5"><strong>Запросы</strong></h2>
+<p>1) select * from chicken, breed;</p>
+<p><img alt="1" src="requests/1.png" /></p>
+<p>2) select * from maintenance, chicken where chicken = 1 and chicken_id = 1;</p>
+<p><img alt="1" src="./requests/2.png" /></p>
+<p>3) select * from maintenance where (select extract(month from in_d) = 11) and chicken = 1;</p>
+<p><img alt="1" src="./requests/3.png" /></p>
+<p>5) select * from breed where breed_id in (select breed from chicken where chicken_id = 2); (by age)</p>
+<p><img alt="1" src="./requests/4.png" /></p>
+<p>7) select sum(weight) as current, sum(average_weight) as target from chicken, breed where breed_id = 1;</p>
+<p><img alt="1" src="./requests/5.png" /></p>
+<p>8) select chicken_id, sum(weight) as current from chicken group by chicken_id having sum(weight) &lt; 150 order by chicken_id;</p>
+<p><img alt="1" src="./requests/6.png" /></p>
+<p>10) select chicken_id, weight from chicken where weight &gt; all (select average_weight from breed);</p>
+<p><img alt="1" src="./requests/7.png" /></p>
                 
               
               

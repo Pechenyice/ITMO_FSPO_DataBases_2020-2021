@@ -1,0 +1,7 @@
+1. 1) select * from chicken, breed;
+2. 2) select * from maintenance, chicken where chicken = 1 and chicken_id = 1;
+3. 3) select * from maintenance where (select extract(month from in_d) = 11) and chicken = 1;
+4. 5) select * from breed where breed_id in (select breed from chicken where chicken_id = 2); (by age)
+5. 7) select sum(weight) as current, sum(average_weight) as target from chicken, breed where breed_id = 1;
+6. 8) select chicken_id, sum(weight) as current from chicken group by chicken_id having sum(weight) < 150 order by chicken_id;
+7. 10) select chicken_id, weight from chicken where weight > all (select average_weight from breed);
