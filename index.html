@@ -1981,17 +1981,17 @@
 <p>1) select * from chicken, breed;</p>
 <p><img alt="1" src="requests/1.png" /></p>
 <p>2) select * from maintenance, chicken where chicken = 1 and chicken_id = 1;</p>
-<p><img alt="1" src="./requests/2.png" /></p>
+<p><img alt="1" src="requests/2.PNG" /></p>
 <p>3) select * from maintenance where (select extract(month from in_d) = 11) and chicken = 1;</p>
-<p><img alt="1" src="./requests/3.png" /></p>
+<p><img alt="1" src="requests/3.PNG" /></p>
 <p>5) select * from breed where breed_id in (select breed from chicken where chicken_id = 2); (by age)</p>
-<p><img alt="1" src="./requests/4.png" /></p>
+<p><img alt="1" src="requests/4.PNG" /></p>
 <p>7) select sum(weight) as current, sum(average_weight) as target from chicken, breed where breed_id = 1;</p>
-<p><img alt="1" src="./requests/5.png" /></p>
+<p><img alt="1" src="requests/5.PNG" /></p>
 <p>8) select chicken_id, sum(weight) as current from chicken group by chicken_id having sum(weight) &lt; 150 order by chicken_id;</p>
-<p><img alt="1" src="./requests/6.png" /></p>
+<p><img alt="1" src="requests/6.PNG" /></p>
 <p>10) select chicken_id, weight from chicken where weight &gt; all (select average_weight from breed);</p>
-<p><img alt="1" src="./requests/7.png" /></p>
+<p><img alt="1" src="requests/7.PNG" /></p>
                 
               
               
